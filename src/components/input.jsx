@@ -62,18 +62,20 @@ export const Input = () => {
     }
 
     return <div id="upper">
-        <div class="main">
-            <div class="left">
-                <input type="text" id="inp" name="title" onChange={changeHandler} /><br /><br />
-
-                <textarea type="text" name="blogger" onChange={changeHandler} rows="10" cols="35" /><br /><br />
-                <input ref={ref} type="file" name="image" onChange={changeHandler} /><br /><br />
-                <button onClick={submition} id="btn">Submit</button>
-                <div id="search">
+           <div id="search">
                     
-                    <input type="text" name="" placeholder="Search" onChange={change} />
-                    <button onClick={searching}>Search</button>
+                    <input type="text" name="" className="search-1" placeholder="Search" onChange={change} />
+                    <button onClick={searching} className="btn-btn-1">Search</button>
                 </div>
+        <div class="main">
+            
+            <div class="left">
+                <input type="text" id="inp" placeholder="Enter movie name" name="title" onChange={changeHandler} /><br /><br />
+
+                <textarea className="blog-area" type="text" name="blogger" placeholder="Enter blogs" onChange={changeHandler} rows="10" cols="35" /><br /><br />
+                <input ref={ref} type="file" name="image" onChange={changeHandler} /><br /><br />
+                <button onClick={submition}  id="btn">Submit</button>
+               
             </div>
             <div class="vl"></div>
 
